@@ -1,0 +1,17 @@
+{
+  "name": "javascript-data-structures",
+  "version": "1.0.0",
+  "description": "JavaScript Data Structures & Unit Testing with Jest ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+    "jest": "^28.1.0"
+  }
+}
