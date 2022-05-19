@@ -30,6 +30,21 @@ export class List {
   };
 
   /**
+   * Removes the element e from the list.
+   * @param {} e  Item to remove from the list.
+   * @returns  true if the element was removed. or false otherwise.
+   */
+  remove = (e) => {
+    let idx = this.find(e);
+    if (idx !== -1) {
+      this.#elements.splice(idx, 1);
+      this.#size--;
+      return true;
+    }
+    return false;
+  };
+
+  /**
    *  Size Of Length of the List ADT
    * @returns size
    */

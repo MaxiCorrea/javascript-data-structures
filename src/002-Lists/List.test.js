@@ -31,5 +31,16 @@ describe("List ADT Basic Funtionality", () => {
     let actual = list.find(70);
     expect(actual).toBe(expected);
   });
-  
+
+  test("should delete item 10 from the list", () => {
+    let list = new List();
+    list.append(10);
+    expect(list.remove(10)).toBe(true);
+  });
+
+  test("should return false if the element to remove is not found in the list", ()=> {
+    let list = new List();
+    expect(list.remove(10)).toBe(false);   
+  })
+
 });
