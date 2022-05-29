@@ -53,4 +53,23 @@ describe("List ADT Basic Funtionality", () => {
     expect(actual).toEqual(expected);   
   })
 
+  test("should insert an element into list", ()=> {
+    let list = new List();
+    list.append(11);
+    list.append(20);
+    let expectedSize = 2;
+    let actualSize = list.size();
+    expect(expectedSize).toBe(actualSize);
+
+    let newValue = 5;
+    let afterValue = 11;
+    expect(list.insert(newValue , afterValue)).toBe(true);
+
+    expectedSize = 3;
+    actualSize = list.size();
+    expect(expectedSize).toBe(actualSize);
+    
+  })
+
+
 });

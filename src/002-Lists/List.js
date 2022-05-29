@@ -45,6 +45,22 @@ export class List {
   };
 
   /**
+   * Insert a new item in the list.
+   * @param {*}  e  Item to insert from the list.
+   * @param {*} afterE
+   * @returns true if the element was inserted. or false otherwise.
+   */
+  insert = (e, afterE) => {
+    let idx = this.find(afterE);
+    if (idx !== -1) {
+      this.#elements.splice(idx + 1, 0, e);
+      this.#size++;
+      return true;
+    }
+    return false;
+  };
+
+  /**
    *  Size Of Length of the List ADT
    * @returns size
    */
@@ -58,5 +74,5 @@ export class List {
    */
   toString = () => {
     return `${this.#elements}`;
-  }
+  };
 }
