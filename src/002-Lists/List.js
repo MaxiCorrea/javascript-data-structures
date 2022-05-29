@@ -51,4 +51,8 @@ export class List {
   size = () => {
     return this.#size;
   };
+
+  toString = () => {
+    return `${this.#elements}`;
+  }
 }

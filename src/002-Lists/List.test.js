@@ -43,4 +43,14 @@ describe("List ADT Basic Funtionality", () => {
     expect(list.remove(10)).toBe(false);   
   })
 
+  test("should implement toString method for the list", ()=> {
+    let list = new List();
+    list.append(11);
+    list.append(20);
+    list.append(13);
+    let expected = "11,20,13";
+    let actual = list.toString();
+    expect(actual).toEqual(expected);   
+  })
+
 });
