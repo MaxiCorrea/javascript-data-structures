@@ -52,6 +52,10 @@ export class List {
     return this.#size;
   };
 
+  /**
+   *  Returns a string representation of the List .
+   * @returns  string representation
+   */
   toString = () => {
     return `${this.#elements}`;
   }
