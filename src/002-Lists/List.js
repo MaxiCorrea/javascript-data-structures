@@ -69,6 +69,14 @@ export class List {
   };
 
   /**
+   * Clear all elements from de list
+   */
+  clear = () => {
+      this.#elements = [];
+      this.#size = 0;
+  }
+
+  /**
    *  Returns a string representation of the List .
    * @returns  string representation
    */

@@ -71,5 +71,12 @@ describe("List ADT Basic Funtionality", () => {
     
   })
 
+  test("should remove all items from the list." , () => {
+    let list = new List();
+    list.append(34);
+    expect(list.size()).toBe(1);
+    list.clear();
+    expect(list.size()).toBe(0);
+  })
 
 });
