@@ -77,6 +77,18 @@ export class List {
   }
 
   /**
+   *  Check if an element is part of the list
+   * @param e element to check 
+   * @returns  true if the element contains in the list. or false otherwise.
+   */
+  contains = (e) => {
+    for( let idx = 0; idx < this.#elements.length; ++idx) 
+      if(this.#elements[idx] === e) 
+        return true;
+    return false;
+  }
+
+  /**
    *  Returns a string representation of the List .
    * @returns  string representation
    */

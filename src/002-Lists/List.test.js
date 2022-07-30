@@ -1,6 +1,7 @@
 import { List } from "./List";
 
 describe("List ADT Basic Funtionality", () => {
+
   test("should initially have a size of 0", () => {
     let list = new List();
     let expected = 0;
@@ -77,6 +78,14 @@ describe("List ADT Basic Funtionality", () => {
     expect(list.size()).toBe(1);
     list.clear();
     expect(list.size()).toBe(0);
+  })
+
+  test("should check if an element is part of the list" , () => {
+    let list = new List();
+    list.append(1);
+    list.append(2);
+    expect(list.contains(2)).toBe(true);
+    expect(list.contains(3)).toBe(false);
   })
 
 });
